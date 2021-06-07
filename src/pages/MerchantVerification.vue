@@ -24,7 +24,7 @@
             <div class="text-pre-wrap">{{ props.row.business_address }} {{ props.row.business_street }}  {{ props.row.business_barangay }} {{ props.row.business_city }} {{ props.row.business_province }} </div>
           </q-td>
            <q-td key="action" :props="props">
-           <q-btn color="info" @click ="imurl = 'http://api.g2g.com/' + props.row.image_path;
+           <q-btn color="info" @click ="imurl = 'http://api.markturtlehouse.dev/' + props.row.image_path;
            business_address = props.row.business_address;
            business_barangay = props.row.business_barangay;
            business_street = props.row.business_street;

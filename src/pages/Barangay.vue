@@ -1,5 +1,5 @@
 <template>
-  <q-page class="bg-green-2">
+  <q-page class="bg-secondary">
     <div class="q-pa-md">
       <q-card class="my-card q-pa-md q-pb-xl">
         <q-table

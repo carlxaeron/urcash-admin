@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="bg-green-2">
+    <q-header elevated class="bg-white">
       <q-toolbar>
         <q-btn
           flat
@@ -25,7 +25,7 @@
       v-model="drawer"
        show-if-above
       bordered
-      content-class="bg-light-blue-6"
+      content-class="bg-secondary"
     >
         <q-list>
         <q-item-label

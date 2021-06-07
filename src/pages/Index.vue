@@ -1,5 +1,5 @@
 <template>
-  <q-page class="bg-green-2 myfont">
+  <q-page class="bg-secondary myfont">
     <div class="q-pa-md">
         <q-card class="my-card">
             <q-card-section class="title">

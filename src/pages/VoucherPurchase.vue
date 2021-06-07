@@ -102,7 +102,7 @@ export default {
       amoun: null,
       pmthd: null,
       maximizedToggle: true,
-      imbase: 'http://api.markturtlehouse.dev/',
+      imbase: 'https://api.markturtlehouse.dev/',
       imurl: '',
       card: false,
       columns: [

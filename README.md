@@ -1,4 +1,4 @@
-# G2GBox Admin (urcashadmin)
+# G2GBox Admin (g2gboxadmin)
 
 Aministrator
 

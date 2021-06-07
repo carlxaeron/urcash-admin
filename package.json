@@ -1,9 +1,9 @@
 {
-  "name": "urcashadmin",
+  "name": "g2gboxadmin",
   "version": "0.0.1",
   "description": "Aministrator",
   "productName": "G2GBox Admin",
-  "author": "apps@thrivemedia.ph",
+  "author": "UCC",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",

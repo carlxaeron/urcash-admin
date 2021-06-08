@@ -7,7 +7,11 @@
 // https://quasar.dev/quasar-cli/quasar-conf-js
 /* eslint-env node */
 
-module.exports = function (/* ctx */) {
+const DotEnv = require('dotenv')
+const webpack = require('webpack')
+const envparsers = require('./config/envparser')
+
+module.exports = function (ctx) {
   return {
     // https://quasar.dev/quasar-cli/supporting-ts
     supportTS: false,
@@ -43,6 +47,7 @@ module.exports = function (/* ctx */) {
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
+      env: envparsers(),
       vueRouterMode: 'hash', // available values: 'hash', 'history'
 
       // transpile: false,

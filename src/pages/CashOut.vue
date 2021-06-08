@@ -323,6 +323,7 @@ export default {
           })
         }
         ).catch(error => {
+          if (error.response && error.response.statusText) alert(error.response.statusText)
           console.log(error.response)
         })
       }).onCancel(() => {
@@ -352,6 +353,7 @@ export default {
           })
         }
         ).catch(error => {
+          if (error.response && error.response.statusText) alert(error.response.statusText)
           console.log(error.response)
         })
       }).onCancel(() => {
@@ -370,6 +372,7 @@ export default {
         this.data = response.data.results
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     },
@@ -386,6 +389,7 @@ export default {
         this.data1 = response.data.results.approved_cashouts
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     }

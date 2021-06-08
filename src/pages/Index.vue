@@ -202,6 +202,7 @@ export default {
         this.unresolve = response.data.results.length
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     },
@@ -220,6 +221,7 @@ export default {
         this.total_voucher_orders_sold = response.data.results.total_voucher_orders_sold
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     },
@@ -236,6 +238,7 @@ export default {
         this.products5 = response.data.results
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     },
@@ -252,6 +255,7 @@ export default {
         this.merchants5 = response.data.results
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     },
@@ -278,6 +282,7 @@ export default {
         this.rendered = true
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     },
@@ -304,6 +309,7 @@ export default {
         this.rendered1 = true
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     },
@@ -320,6 +326,7 @@ export default {
         this.data = response.data.results
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     }

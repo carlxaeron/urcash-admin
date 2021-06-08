@@ -87,6 +87,7 @@ export default {
           })
         }
         ).catch(error => {
+          if (error.response && error.response.statusText) alert(error.response.statusText)
           console.log(error.response)
         })
       }).onCancel(() => {
@@ -116,6 +117,7 @@ export default {
           })
         }
         ).catch(error => {
+          if (error.response && error.response.statusText) alert(error.response.statusText)
           console.log(error.response)
         })
       }).onCancel(() => {
@@ -134,6 +136,7 @@ export default {
         this.data = response.data.results.products
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     }

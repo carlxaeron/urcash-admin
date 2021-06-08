@@ -88,6 +88,7 @@ export default {
           })
         }
         ).catch(error => {
+          if (error.response && error.response.statusText) alert(error.response.statusText)
           console.log(error.response)
         })
       }).onCancel(() => {
@@ -106,6 +107,7 @@ export default {
         this.data = response.data.results.support_tickets
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     }

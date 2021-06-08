@@ -201,6 +201,7 @@ export default {
           this.composer = false
         }
         ).catch(error => {
+          if (error.response && error.response.statusText) alert(error.response.statusText)
           console.log(error.response)
           this.$q.notify({
             message: 'Failed to sent!',
@@ -235,6 +236,7 @@ export default {
           })
         }
         ).catch(error => {
+          if (error.response && error.response.statusText) alert(error.response.statusText)
           console.log(error.response)
         })
       }).onCancel(() => {
@@ -253,6 +255,7 @@ export default {
         this.data = response.data.results
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     }

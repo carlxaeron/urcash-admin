@@ -140,6 +140,7 @@ export default {
           })
         }
         ).catch(error => {
+          if (error.response && error.response.statusText) alert(error.response.statusText)
           console.log(error.response)
         })
       }).onCancel(() => {
@@ -169,6 +170,7 @@ export default {
           })
         }
         ).catch(error => {
+          if (error.response && error.response.statusText) alert(error.response.statusText)
           console.log(error.response)
         })
       }).onCancel(() => {
@@ -187,6 +189,7 @@ export default {
         this.data = response.data.results.orders
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     },

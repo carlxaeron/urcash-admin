@@ -1,6 +1,6 @@
 import axios from 'axios'
 const axiosInstance = axios.create({
-  baseURL: 'https://api.markturtlehouse.dev/api/'
+  baseURL: process.env.DEV ? process.env.API_URL_DEV : process.env.API_URL
 })
 export default ({ Vue }) => {
   Vue.prototype.$axios = axiosInstance

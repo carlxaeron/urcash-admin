@@ -90,6 +90,7 @@ export default {
           this.total = response.data.results.total_sales
         }
         ).catch(error => {
+          if (error.response && error.response.statusText) alert(error.response.statusText)
           this.total = 0
           this.data = []
           console.log(error.response)
@@ -114,6 +115,7 @@ export default {
         this.targetlist = response.data.results
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     }

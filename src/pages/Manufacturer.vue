@@ -92,6 +92,7 @@ export default {
           this.data = response.data.results.manufacturer
         }
         ).catch(error => {
+          if (error.response && error.response.statusText) alert(error.response.statusText)
           this.data = []
           console.log(error.response)
           this.$q.notify({
@@ -115,6 +116,7 @@ export default {
         this.targetlist = response.data.results
       }
       ).catch(error => {
+        if (error.response && error.response.statusText) alert(error.response.statusText)
         console.log(error.response)
       })
     }

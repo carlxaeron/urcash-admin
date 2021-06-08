@@ -120,7 +120,7 @@ export default {
           if (response.data.results === false) {
             this.$q.sessionStorage.set('locked', 'true')
           } else {
-            this.$q.localStorage.set('mobile', '63' + this.mobile)
+            this.$q.localStorage.set('admin-mobile', '63' + this.mobile)
             this.otp_dialog = true
           }
         }
